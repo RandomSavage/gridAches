@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript">
+//window.onload= function() {
+let button = document.getElementById('switch');
+let box = document.querySelector('.onBtns');
+button.addEventListener('click', function() {
+  box.classList.toggle('bgRed');
+});
+/*  document.getElementById('first').onclick = (e) => {
+
+    let tags = document.querySelector(".onBtns");
+    tags.className = "bgRed";
+};*/
+/*let tags = document.querySelectorAll(".onBtns");
+tags.forEach( tag => {
+      tag.className = "bgRed";*/
+//};
+</script>
+<style>
+body{
+  background: #818181;
+}
+  .grid{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    /*grid-auto-rows: 100px;   non-responsive way*/
+    grid-auto-rows: minmax(100px, auto);
+  }
+.grid > div{
+  background: #eee;
+  padding: 1em;
+}
+.grid > div:nth-child(odd){
+  background: #ddd;
+}
+
+.nested{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: 70px;
+}
+.myBtns{
+  display: grid;
+  border: #333 2px solid;
+  padding: 1em;
+  margin-left: 100px;
+  width: 25%;
+}
+.onBtns{
+  background: green;
+}
+.offBtns{
+  background: blue;
+}
+
+button{
+  color: purple;
+  font-size: 10px;
+  margin:auto;
+}
+.headache{
+  display:grid;
+  background:blue;
+}
+
+.bgRed{
+  background:'orange';
+  width: 75%;
+}
+
+
+/*
+justify-self:start,center,end;
+align-self:start,center,end;
+grid-column: 3; or grid-column 1/3;
+grid-row 3; or grid-row 1/3;
+*/
+</style>
+<title>gridAches</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="mySludgeCss.css">-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div>
+  <div class='nested'>
+    <div class='myBtns onBtns'>
+    <button id='switch' class= 'button' type="button">###</button>
+   </div>
+   <div class="myBtns offBtns">
+   <button type="button">###</button>
+  </div>
+  <div class='myBtns onBtns'>
+  <button class= 'button' type="button"><span style="margin:auto">###</span></button>
+ </div>
+ <div class="myBtns offBtns">
+ <button type="button">###</button>
+</div>
+<div class='myBtns onBtns'>
+<button class= 'button' type="button"><span style="margin:auto">###</span></button>
+</div>
+<div class="myBtns offBtns">
+<button type="button">###</button>
+</div>
+<div class='myBtns onBtns'>
+<button class= 'button' type="button"><span style="margin:auto">###</span></button>
+</div>
+<div class="myBtns offBtns">
+<button type="button">###</button>
+</div>
+<div class='myBtns onBtns'>
+<button class= 'button' type="button"><span style="margin:auto">###</span></button>
+</div>
+<div class="myBtns offBtns">
+<button type="button">###</button>
+</div>
+<div class='myBtns onBtns'>
+<button class= 'button' type="button"><span style="margin:auto">###</span></button>
+</div>
+<div class="myBtns offBtns">
+<button type="button">###</button>
+</div>
+<div class='myBtns onBtns'>
+<button class= 'button' type="button"><span style="margin:auto">###</span></button>
+</div>
+<div class="myBtns offBtns">
+<button type="button">###</button>
+</div>
+<div class='myBtns onBtns'>
+<button class= 'button' type="button"><span style="margin:auto">###</span></button>
+</div>
+<div class="myBtns offBtns">
+<button type="button">###</button>
+</div>
+
+
+</div>
+</div>
